@@ -28,7 +28,7 @@
 <h3>Create a new Comment:</h3>
 <%= form_for @post do |f| %>
   <%= f.hidden_field :post_id, value: @post.id %>
-  <%= f.collection_select :user_id, User.all, :id, :name %>
+  <%= f.collection_select :user_id, User.all, :id, :id %>
 
   <%= fields_for :comments do |comment| %>
     <%= comment.label :content %>
