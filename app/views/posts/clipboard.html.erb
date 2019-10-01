@@ -1,0 +1,19 @@
+<%= @post.categories.each do |category| %>
+  <li>
+    <p><%= category.name %></p>
+  </li>
+<% end %>
+<!--
+<%= @post.unique_user_comments.each do |user, comment_list| %>
+  <li>
+    <%= link_to user.name, user_path(user) %> says:
+    <ul>
+      <%= comment_list.each do |comment| %>
+        <li>
+          <p><%= comment.content %></p>
+        </li>
+      <% end %>
+    </ul>
+  </li>
+<% end %>
+-->
